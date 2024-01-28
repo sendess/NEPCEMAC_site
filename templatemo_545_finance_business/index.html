@@ -8,8 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/images/logo_color_bg.png"/>
 
-    <title>Finance Business HTML5 Template</title>
+    <title>NEPCEMAC</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,10 +21,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
 <!--
 
-Finance Business TemplateMo
-
-https://templatemo.com/tm-545-finance-business
-
+NEPCEMAC TemplateMo
 -->
   </head>
 
@@ -70,22 +68,19 @@ https://templatemo.com/tm-545-finance-business
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#top">Home
+              <li class="nav-item">
+                <a class="nav-link current" href="#top">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Our Services</a>
-              </li>                          
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="#services">Our Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="one-page.html">One Page</a>
+                <a class="nav-link" href="#about">About Us</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -103,7 +98,7 @@ https://templatemo.com/tm-545-finance-business
                 <div class="text-content">
                   <h6>we are ready to help you</h6>
                   <h4>Financial Analysis<br>&amp; Consulting</h4>
-                  <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. This is a multiple-page version with different HTML pages. <a href="one-page.html">One-page version</a> is available as of 2021 February.</p>
+                  <p>This finance HTML template is 100% free of charge provided by TemplateMo. This is one-page version added in 2021 February. <a href="index.html">Multiple-page version</a> with different HTML pages are also available.</p>
                   <a href="contact.html" class="filled-button">contact us</a>
                 </div>
             </div>
@@ -127,7 +122,7 @@ https://templatemo.com/tm-545-finance-business
                 <div class="text-content">
                   <h6>we have a solid background</h6>
                   <h4>Market Analysis<br>&amp; Statistics</h4>
-                  <p>You can download, edit and use this layout for your business website. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+                  <p>You can download, edit and use this NEPCEMAC layout for your commercial websites. You just need to put class="external" if you wish to link to external URLs in the main menu.</p>
                   <a href="about.html" class="filled-button">learn more</a>
                 </div>
             </div>
@@ -151,12 +146,12 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Financial <em>Services</em></h2>
+              <h2>Our <em>Services</em></h2>
               <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
             </div>
           </div>
@@ -238,7 +233,7 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
-    <div class="more-info">
+    <div class="more-info" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -318,7 +313,7 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
-    <div class="callback-form">
+    <div class="callback-form" id="contactus">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -402,7 +397,7 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <h4>Finance Business</h4>
+            <h4>NEPCEMAC</h4>
             <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
             <ul class="social-icons">
               <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -481,10 +476,25 @@ https://templatemo.com/tm-545-finance-business
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Additional Scripts -->
+    <script src="assets/js/jquery.singlePageNav.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
+    <script>
+      $(function() {
+        // Single Page Nav
+        $('#navbarResponsive').singlePageNav({
+          'offset': 100,
+          'filter': ':not(.external)'
+        });
+
+        // On mobile, close the menu after nav-link click
+        $('#navbarResponsive .navbar-nav .nav-item .nav-link').click(function(){
+          $('#navbarResponsive').removeClass('show');
+        });
+      });
+    </script>
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
