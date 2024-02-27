@@ -1004,7 +1004,7 @@ ul.slick-dots {
 	}
 
 	100% {
-		transform: translateX(calc(-150px * 6));
+		transform: translateX(calc(-180px * 6));
 	}
 }
 
@@ -1360,6 +1360,115 @@ footer .contact-form button.filled-button:hover {
 	color: #4c9b3e;
 	font-size: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contactus .info {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#contactus .info i {
+	font-size: 20px;
+	color: #7cc576;
+	float: left;
+	width: 44px;
+	height: 44px;
+	background: #eaf6e9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+}
+
+#contactus .info h4 {
+	padding: 0 0 0 60px;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	color: #151515;
+}
+
+#contactus .info p {
+	padding: 0 0 0 60px;
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #484848;
+}
+
+#contactus .info .email,
+#contactus .info .phone {
+	margin-top: 40px;
+}
+
+#contactus .info .email:hover i,
+#contactus .info .address:hover i,
+#contactus .info .phone:hover i {
+	background: #7cc576;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
