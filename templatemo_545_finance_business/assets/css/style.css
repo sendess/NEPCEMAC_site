@@ -994,7 +994,7 @@ ul.slick-dots {
 
 .partners .partner-item {
 	display: inline-flex;
-	animation: scroll 10s linear infinite;
+	animation: scroll 22s linear infinite;
 }
 
 
@@ -1004,7 +1004,7 @@ ul.slick-dots {
 	}
 
 	100% {
-		transform: translateX(calc(-180px * 6));
+		transform: translateX(calc(-570px * 6));
 	}
 }
 
@@ -1608,3 +1608,11 @@ footer .contact-form button.filled-button:hover {
 		border-bottom: none !important;
 	}
 }
+
+
+#btn-back-to-top {
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	display: none;
+  }
