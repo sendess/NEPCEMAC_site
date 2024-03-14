@@ -25,6 +25,27 @@
 
 NEPCEMAC 
 -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    function onYouTubeIframeAPIReady() {
+      new YT.Player('video-light', {
+        videoId: '05YkUGyGrNE',
+        playerVars: {
+          autoplay: 0,
+          mute: 1,
+          controls: 1,
+          disablekb: 1,
+          playsinline: 0,
+          cc_load_policy: 0,
+          cc_lang_pref: 'auto',
+          rel: 0,
+          showinfo: 0,
+          iv_load_policy: 3,
+          modestbranding: 1
+        }
+      });
+    }
+  </script>
 </head>
 
 <body>
@@ -295,12 +316,13 @@ NEPCEMAC
         <div class="col-md-12">
           <div class="more-info-content">
             <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
+              <div class="col-md-7" style="display: flex">
+                <div id="video-light" class="video-box align-self-center" style="width: 100%; height: 90%; border-radius: 20px;"></div>
+                <!-- <div class="left-image">
                   <img src="assets/images/more-info.jpg" alt="">
-                </div>
+                </div> -->
               </div>
-              <div class="col-md-6 align-self-center">
+              <div class="col-md-5 align-self-center">
                 <div class="right-content">
                   <span>Who we are</span>
                   <h2>Get to know about <em>our organization</em></h2>
@@ -318,7 +340,7 @@ NEPCEMAC
     </div>
   </div>
 
-  <div class="testimonials">
+  <!-- <div class="testimonials">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -374,7 +396,7 @@ NEPCEMAC
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="callback-form" id="contactus">
     <div class="container">
@@ -488,17 +510,17 @@ NEPCEMAC
             </div>
 
             <div class="partner-item">
-              <img src="assets/images/LOGOS/giz.jpg" title="Deutsche Gesellschaft für Internationale Zusammenarbeit"
+              <img src="assets/images/LOGOS/giz.png" title="Deutsche Gesellschaft für Internationale Zusammenarbeit"
                 alt="Deutsche Gesellschaft für Internationale Zusammenarbeit">
             </div>
 
             <div class="partner-item">
-              <img src="assets/images/LOGOS/CIUD.jpg" title="Centre for Integrated Urban Development"
+              <img src="assets/images/LOGOS/CIUD.png" title="Centre for Integrated Urban Development"
                 alt="Centre for Integrated Urban Development">
             </div>
 
             <div class="partner-item">
-              <img src="assets/images/LOGOS/NTNC.jpg" title="National Trust For Nature Conservation"
+              <img src="assets/images/LOGOS/NTNC.png" title="National Trust For Nature Conservation"
                 alt="National Trust For Nature Conservation">
             </div>
 
@@ -517,7 +539,8 @@ NEPCEMAC
           <h4>NEPCEMAC</h4>
           <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
           <ul class="social-icons">
-            <li><a href="https://www.facebook.com/nepcemac.lalitpur" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/nepcemac.lalitpur" target="_blank"><i class="fa fa-facebook"></i></a>
+            </li>
             <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
           </ul>
         </div>
@@ -542,7 +565,7 @@ NEPCEMAC
           </ul>
         </div>
         <div class="col-md-3 footer-item last-item">
-            <!-- <h4>Contact Us</h4>
+          <!-- <h4>Contact Us</h4>
             <div class="contact-form">
               <form id="contact footer-contact" action="" method="post">
                 <div class="row">
@@ -569,7 +592,7 @@ NEPCEMAC
                 </div>
               </form>
             </div> -->
-          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -613,11 +636,11 @@ NEPCEMAC
   </script>
 
   <script language="text/Javascript">
-    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+    cleared[0] = cleared[1] = cleared[2] = 0;  //set a cleared flag for each field
     function clearField(t) {                   //declaring the array outside of the
-      if (!cleared[t.id]) {                      // function makes it static and global
-        cleared[t.id] = 1;  // you could use true and false, but that's more typing
-        t.value = '';         // with more chance of typos
+      if (!cleared[t.id]) {                    // function makes it static and global
+        cleared[t.id] = 1;                     // you could use true and false, but that's more typing
+        t.value = '';                          // with more chance of typos
         t.style.color = '#fff';
       }
     }
