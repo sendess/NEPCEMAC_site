@@ -1587,7 +1587,7 @@ footer .contact-form button.filled-button:hover {
 	border-radius: 10px;
 	color: white;
 	cursor: pointer;
-	transition: 400ms;
+	transition: 200ms;
 }
 
 .cards .card:hover {
