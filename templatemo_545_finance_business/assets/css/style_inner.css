@@ -801,65 +801,6 @@ ul.slick-dots {
 	margin-bottom: 30px;
 }
 
-/* Letters from chairman and spokesperson */
-#chairman_letter {
-	color: #000;
-	line-height: 1.6;
-	text-align: justify;
-	text-justify: inter-word;
-}
-
-#pills-tab .nav-link {
-	background-color: #d3d3d3;
-	color: #000000;
-	text-decoration: none;
-}
-
-#pills-tab .nav-link.active {
-	background-color: #4c9b3e;
-	color: white;
-}
-
-
-/* Partners Style */
-
-.contact-partners {
-	margin-top: -8px !important;
-}
-
-.partners {
-	margin-top: 90px;
-	background-color: #f7f7f7;
-	padding: 60px 0px;
-}
-
-.partners .owl-item {
-	text-align: center;
-	cursor: pointer;
-}
-
-.partners .partner-item img {
-	max-width: 156px;
-	margin: auto;
-}
-
-.partners .partner-item {
-	display: inline-flex;
-	animation: scroll 22s linear infinite;
-}
-
-
-@keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(calc(-570px * 6));
-	}
-}
-
-
 
 .input {
 	display: flex;
