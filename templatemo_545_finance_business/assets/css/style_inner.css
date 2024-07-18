@@ -359,6 +359,16 @@ header .navbar {
 }
 
 
+#myTab .nav-link {
+	background-color: #d3d3d3;
+	color: #000000;
+	text-decoration: none;
+}
+
+#myTab .nav-link.active {
+	background-color: #4c9b3e;
+	color: white;
+}
 
 /* Banner Style */
 
