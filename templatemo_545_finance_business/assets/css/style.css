@@ -656,6 +656,23 @@ ul.slick-dots {
 .services {
 	margin-top: 90px;
 }
+.services a{
+	color: #4c9b3e;
+}
+
+.service-item{
+	transition: transform .2s;
+}
+.service-item:hover{
+	transform: scale(1.08);
+}
+
+.service-item:hover .down-content{
+	background-color: rgba(86, 86, 86, 0.603);
+	color: white;
+}
+
+
 
 .service-item img {
 	width: 100%;
@@ -665,11 +682,13 @@ ul.slick-dots {
 }
 
 .service-item .down-content {
-	background-color: #f7f7f7;
+	background-color: rgba(176, 176, 176, 0.25);
 	padding: 30px;
 	border-bottom-left-radius: 5%;
 	border-bottom-right-radius: 5%;
+	transition: transform .2s;
 }
+
 
 .service-item .down-content h4 {
 	font-size: 20px;
