@@ -1105,6 +1105,7 @@ footer .contact-form button.filled-button:hover {
 .team-item img {
 	width: 100%;
 	overflow: hidden;
+	border-radius: 2%;
 }
 
 .team-item .down-content {
