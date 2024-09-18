@@ -2,7 +2,46 @@
 <html lang="en">
 
 <head>
+  <style>
+    /* Custom styles */
+    .person-card {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease-in-out;
+    }
 
+    .person-card:hover {
+      transform: scale(1.05);
+    }
+
+    .person-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 200%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #4c9b3e;
+    }
+
+    .person-info {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .person-name {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .person-designation {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -199,7 +238,6 @@
       </div>
     </div>
   </div>
-
   <!-- <div class="team">
     <div class="container">
       <div class="row">
@@ -268,42 +306,177 @@
                   <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                     aria-labelledby="pills-chairman-tab">
                     <div class="more-info-content">
-                      <div class="row">
-                        <div class="col-md-3" style="background-color: red;">
-                          <div style="height: 10cm;display: flex;">
-                            <img src="./assets/images/boards/rajkumar.png" style="margin: auto; height: 8cm;width: 6.5cm;margin-left: 0px;">
+                      <div class="row justify-content-center">
+                        <!-- Person 1 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/tikaram.png" alt="Tika Ram Dahal" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">TikaRam Dahal</div>
+                              <div class="person-designation">Director</div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-md-3" style="background-color: blue;">
-                          <div style="height: 10cm;display: flex;">
-                            <img src="./assets/images/boards/rajkumar.png" style="margin: auto; height: 8cm;width: 6.5cm;margin-left: 0px;">
+                        <!-- Person 2 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/saru.png" alt="Saraswati Acharya" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Saraswati Acharya</div>
+                              <div class="person-designation">Director</div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-md-3" style="background-color: yellow;">
-                          <div style="height: 10cm;display: flex;">
-                            <img src="./assets/images/boards/rajkumar.png" style="margin: auto; height: 8cm;width: 6.5cm;margin-left: 0px;">
+                        <!-- Person 3 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/laxmigelal.png" alt="Laxmi Prasad Gelal" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Laxmi Prasad Gelal</div>
+                              <div class="person-designation">Director</div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-md-3" style="background-color: green;">
-                          <div style="height: 10cm;display: flex;">
-                            <img src="./assets/images/boards/rajkumar.png" style="margin: auto; height: 8cm;width: 6.5cm;margin-left: 0px;">
+                      </div>
+                      <div class="row justify-content-center">
+                        <!-- Person 1 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/baburamghim.png" alt="Baburam Ghimire" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Baburam Ghimire</div>
+                              <div class="person-designation">Director</div>
+                            </div>
                           </div>
                         </div>
+                        <!-- Person 2 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/govinda.png" alt="Govinda Prasad Acharya" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Govinda Prasad Acharya</div>
+                              <div class="person-designation">Director</div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Person 3 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/meetra.png" alt="Meetra Prasad Ghimire" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Meetra Prasad Ghimire</div>
+                              <div class="person-designation">Director</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center">
+                        <!-- Person 1 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/laxmighim.png" alt="Laxmi Prasad Ghimire" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Laxmi Prasad Ghimire</div>
+                              <div class="person-designation">Director</div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Person 2 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/baburamcham.png" alt="Baburam Chaulagain" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Baburam Chaulagain</div>
+                              <div class="person-designation">Director</div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Person 3 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/rajkumar.png" alt="Somnath Dhakal" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Somnath Dhakal</div>
+                              <div class="person-designation">Director</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center">
+                        <!-- Person 1 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/rajkumar.png" alt="Tulsiram Sitaula" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Tulsiram Sitaula</div>
+                              <div class="person-designation">Director</div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Person 2 -->
+                        <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/rabindra.png" alt="Rabindra Prasad Niraula" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Rabindra Prasad Niraula</div>
+                              <div class="person-designation">Director</div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Person 3 -->
+                        <!-- <div class="col-md-4 col-sm-6">
+                          <div class="person-card">
+                            <img src="./assets/images/boards/laxmigelal.png" alt="Person 3" class="person-image">
+                            <div class="person-info">
+                              <div class="person-name">Laxmi Prasad Gelal</div>
+                              <div class="person-designation">Director</div>
+                            </div>
+                          </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                     aria-labelledby="pills-program_cordinator-tab">
-                    <div class="more-info-content">
-                      <div class="row">
-                        <div class="col-md-5" style="display: flex">
-                          <div style="object-fit: contain;display: flex;align-items: center;">
-                            <img src="./assets/images/program_coordinator.png"
-                              style="height:auto;width: 100%;border-radius: 20px;">
+                    <div class="row justify-content-center">
+                      <!-- Person 1 -->
+                      <div class="col-md-3 col-sm-4">
+                        <div class="person-card">
+                          <img src="./assets/images/boards/tikaram.png" alt="Tika Ram Dahal" class="person-image">
+                          <div class="person-info">
+                            <div class="person-name">Devi Prasad Acharya</div>
+                            <div class="person-designation">Advisor Title</div>
                           </div>
-                          <!-- <div class="left-image">
-                            <img src="assets/images/more-info.jpg" alt="">
-                          </div> -->
+                        </div>
+                      </div>
+                      <!-- Person 2 -->
+                      <div class="col-md-3 col-sm-4">
+                        <div class="person-card">
+                          <img src="./assets/images/boards/saru.png" alt="Saraswati Acharya" class="person-image">
+                          <div class="person-info">
+                            <div class="person-name">Bhupal Acharya</div>
+                            <div class="person-designation">Advisor Title</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Person 3 -->
+                      <div class="col-md-3 col-sm-4">
+                        <div class="person-card">
+                          <img src="./assets/images/boards/laxmigelal.png" alt="Person 3" class="person-image">
+                          <div class="person-info">
+                            <div class="person-name">Someone someone</div>
+                            <div class="person-designation">Advisor Title</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Person 4 -->
+                      <div class="col-md-3 col-sm-4">
+                        <div class="person-card">
+                          <img src="./assets/images/boards/laxmigelal.png" alt="Person 3" class="person-image">
+                          <div class="person-info">
+                            <div class="person-name">Someone else</div>
+                            <div class="person-designation">Advisor Title</div>
+                          </div>
                         </div>
                       </div>
                     </div>
